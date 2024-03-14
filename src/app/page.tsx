@@ -8,7 +8,7 @@ export default function Home() {
   const isUserAuthorized = getCookie("isUserAuthorized") || false;
 
   const handleSignIn = () => {
-    setCookie("isUserAuthorized", "true", {sameSite:'none'});
+    setCookie("isUserAuthorized", "true");
     router.refresh();
   };
   const handleSignOut = () => {
